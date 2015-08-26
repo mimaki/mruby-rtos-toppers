@@ -7,13 +7,13 @@ RTOS (TOPPERS) library for mruby.
 
 ### RTOS module
 |method|description|
-|-|-|
+|:--|:--|
 |RTOS::delay|Delay the processing of a task for the specified number of milliseconds|
 |RTOS::millis|Get system time in milliseconds|
 
 ### RTOS::Task class
 |method|description|
-|-|-|
+|:--|:--|
 |Task.new|Create Task object|
 |Task#activate|Activate task|
 |Task#suspend|Suspend task|
@@ -22,7 +22,7 @@ RTOS (TOPPERS) library for mruby.
 
 ### RTOS::EventFlag class
 |method|description|
-|-|-|
+|:--|:--|
 |EventFlag.new|Create EventFlag object|
 |EventFlag#set|Set event flag signal|
 |EventFlag#wait|Wait event flag signal|
@@ -30,7 +30,7 @@ RTOS (TOPPERS) library for mruby.
 
 ### RTOS::DataQueue class
 |method|description|
-|-|-|
+|:--|:--|
 |DataQueue.new|Create DataQueue object|
 |DataQueue#send|Send message to data queue|
 |DataQueue#get|Get message from data queue|
