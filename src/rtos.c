@@ -7,6 +7,7 @@
 
 /* initialize functions */
 extern void mrb_rtos_flag_init(mrb_state*, struct RClass*);
+extern void mrb_rtos_sem_init(mrb_state*, struct RClass*);
 extern void mrb_rtos_memory_init(mrb_state*, struct RClass*);
 extern void mrb_rtos_dataqueue_init(mrb_state*, struct RClass*);
 
@@ -184,6 +185,9 @@ mrb_mruby_rtos_toppers_gem_init(mrb_state *mrb)
 
   /* EventFlag class */
   mrb_rtos_flag_init(mrb, rtos);
+
+  /* Semaphore class */
+  mrb_rtos_sem_init(mrb, rtos);
 
   /* MemoryPool, MemoryBuffer */
   mrb_rtos_memory_init(mrb, rtos);

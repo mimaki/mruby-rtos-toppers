@@ -59,6 +59,11 @@ ER RTOS_wai_sem(mrb_state *mrb, ID id)
   return E_OK;
 }
 
+ER RTOS_twai_sem(mrb_state *mrb, ID id, TMO tmout)
+{
+  return E_OK;
+}
+
 ER RTOS_pol_sem(mrb_state *mrb, ID id)
 {
   return E_OK;
